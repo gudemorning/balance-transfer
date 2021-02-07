@@ -1,0 +1,102 @@
+/*
+A Basic Valid CSS Class Name
+A valid name should start with an underscore (_), a hyphen (-) or a letter (a-z) which is followed by any numbers, hyphens, underscores, letters. A name should be at least two characters long. Cannot start with a digit, two hyphens or a hyphen followed by a number.
+https://pineco.de/css-quick-tip-the-valid-characters-in-a-custom-css-selector/
+*/
+
+* { box-sizing: border-box; }
+
+
+header						{ grid-area: header; }
+#top							{ grid-area: top; }
+/*#adBeforeResults	{ grid-area: ad; }*/
+#results					{ grid-area: results; }
+#more							{ grid-area: more; }
+footer						{ grid-area: footer; }
+
+
+/* leader boards */
+#ad-728x90				{ grid-area: ad728x90; }
+#ad-480x60				{ grid-area: ad480x60; }
+#ad-320x50				{ grid-area: ad320x50; }
+
+/* skyscraper */
+#ad-160x600				{ grid-area: ad160x600; }
+
+/* square */
+#ad-300x250				{ grid-area: ad300x250; }
+
+
+.wrapper {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-areas: 
+    "header"
+    "top"
+    "ad300x250"
+    "results"
+    "more"
+    "footer";
+	
+}
+/* Hide the wider leaderboards by default. */
+#ad-728x90	{ display:none; }
+#ad-480x60	{ display:none; }
+#ad-320x50	{ display:block; }
+#ad-160x600 { display:none; }
+/*
+	Window between 545-806 px wide.
+	ad-480x60 banner is 480 px wide at 545px wide screen.
+*/
+
+@media (min-width: 545px) {
+	
+  .wrapper {
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas: 
+      "header			header"
+      "top				ad160x600"
+			"ad300x250	ad160x600"
+			"results		ad160x600"
+      "more				ad160x600"
+      "footer			footer";
+  }
+  footer ul {
+    display: flex;
+    justify-content: space-between;
+  }
+	/* Hide the mobile leaderboard */
+	
+	#ad-728x90 { display:none; }
+	#ad-480x60 { display:block; }
+	#ad-320x50 { display:none; }
+	#ad-160x600 { display:block; }
+
+}
+
+/*
+	Window is at least 807 px wide.
+	ad-728x90 banner is 728 px wide at 807px wide screen.
+*/
+
+@media (min-width: 807px) { 
+	
+  .wrapper {
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas: 
+      "header			header"
+      "top				ad160x600"
+			"ad300x250	ad160x600"
+      "results		ad160x600"
+			"more				ad160x600"
+      "footer			footer"
+   }
+   footer ul {
+     flex-direction: column;
+   }
+	/* Hide the mobile leaderboard */
+	
+	#ad-728x90 { display:block; }
+	#ad-480x60 { display:none; }
+	#ad-320x50 { display:none; }
+	#ad-160x600 { display:block; }
