@@ -1,0 +1,56 @@
+section#top form#form {
+	
+  display: grid;
+	grid-template-columns: 6fr 5fr;
+	grid-gap: 10px;
+	
+	grid-template-areas:
+		"label-balance	input-balance"
+		"label-rate			input-rate"
+		"nothing				calculate";
+}
+
+/* Name the grid areas. */
+
+label#label-balance { grid-area: label-balance; }
+
+input#balance				{ grid-area: input-balance; }
+
+label#label-rate {		grid-area: label-rate; }
+
+input#rate { 					grid-area: input-rate; }
+
+input#nothing { grid-area: nothing; }
+
+input#input-calculate { grid-area: calculate;}
+
+section#results {
+	
+  display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 5px;
+	
+	grid-template-areas:
+		"header					header					header"
+		"th-balance			th-rate					th-fee"
+		"result-balance	result-rate-one	result-fee-one"
+		"result-best		result-rate-two	result-fee-two"
+		"save						save						save";
+}
+		
+
+h2 { grid-area: header; }
+
+strong#th-label-balance { grid-area: th-balance; }
+strong#th-label-rate		{	grid-area: th-rate; }
+strong#th-label-fee			{	grid-area: th-fee; }
+
+div#result-div-balance	{ grid-area: result-balance; }
+div#result-div-rate-one { grid-area: result-rate-one; }
+div#result-div-fee-one	{ grid-area: result-fee-one; }
+
+div#result-div-best			{ grid-area: result-best; }
+div#result-div-rate-two { grid-area: result-rate-two; }
+div#result-div-fee-two	{ grid-area: result-fee-two; }
+
+div#footnote 						{	grid-area: save; }
