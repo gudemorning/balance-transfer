@@ -1,6 +1,6 @@
 # Balance transfers
 
-https://bettervida.github.io/balance-transfers/
+https://betterchoices.github.io/balance-transfers/
 
 This calculator figures out the amount you should transfer.
 
