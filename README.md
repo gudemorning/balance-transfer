@@ -1,12 +1,12 @@
 # Balance transfers
 
-https://betterchoices.github.io/balance-transfers/
+https://roundingerrors.github.io/balance-transfers/
 
-This calculator figures out the amount you should transfer.
+Calculate how much you can transfer without paying a penny more, thanks to rounding errors.
 
 ## How to use
 1. Enter the amount you want to transfer to another credit card.
-2. Enter the fee rate you'll be charged.
+2. Enter the percent fee you'll be charged.
 3. Press the calculate button
 4. Under the results:
 5. The black result shows the fee you would pay.
