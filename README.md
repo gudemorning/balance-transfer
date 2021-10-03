@@ -1,6 +1,6 @@
 # Balance transfers
 
-https://roundingerrors.github.io/balance-transfers/
+https://smallgain.github.io/balance-transfer/
 
 Calculate how much you can transfer without paying a penny more, thanks to rounding errors.
 
