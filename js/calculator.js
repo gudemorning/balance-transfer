@@ -1,9 +1,9 @@
-/* functional-02.js */
+/* File: calculator.js */
 
 // When page loads. Then call the 2nd parameter.
 window.addEventListener("load",  listenForEvents, false);
 
-// Save DOM elements to variables
+// Save input fields elements to variables
 
 var inputBalance = document.getElementById("balance");
 var inputRate = document.getElementById("rate");
@@ -20,7 +20,7 @@ var spanSavings = document.getElementById("result-div-savings");
 
 function listenForEvents() {	
 	
-	calculate()
+	//calculate()
 	
 	// When 'Calculate' button is clicked, call 2nd parameter.
 	inputButton.addEventListener("click", calculate);
