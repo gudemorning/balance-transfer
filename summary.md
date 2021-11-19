@@ -1,20 +1,13 @@
-# Balance transfers
+# I made a Rounding error tool!
 
-https://smallgain.github.io/balance-transfer/
+It calculates your balance transfer fee and shows how much more you can borrow for the same fee (thanks to rounding).
 
-Calculate how much you can transfer without increasing your fee, thanks to rounding errors.
+It works for non-compounding loans whose fee is based on an interest rate.
 
-## How to use
-1. Enter the amount you want to transfer to another credit card.
-2. Enter the percent fee you'll be charged.
-3. Press the calculate button
-4. Under the results:
-5. The black result shows the fee you would pay.
-6. The blue result shows the amount you can borrow for the same fee.
+I couldn't find a calculator for this so I created my own[https://smallgain.github.io/balance-transfer/
+].
 
+It wasn't as easy to create as I thought because Javascript doesn't calculate decimal math accurately.
+I had to use LINK TO LIBRARY HERE to fix the decimal calculations.
 
-## Features
-
-### HTML 5 validation
-
-#### <input type="number">
+My design was inspired by @b0rk's simple DNS lookup tool[https://dns-lookup.jvns.ca/trace.html#twitter.com].
