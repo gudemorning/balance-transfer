@@ -33,7 +33,7 @@ Uses CSS grids to layout the page, calculator fields and results text.
 
 To explore web technologies I've learned or wanted to learn.
 
-* Uses Javascript and CSS grids
+* Javascript and [CSS grid](https://caniuse.com/css-grid)
 * Google Tag manager
 * Google Analytics
 * Setting up an Amazon Web Services S3 bucket for web hosting.
