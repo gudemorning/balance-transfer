@@ -2,7 +2,7 @@
 
 https://smallgain.github.io/balance-transfer/
 
-Calculate how much you can transfer without paying a penny more, thanks to rounding errors.
+Calculate how much you can transfer without increasing your fee, thanks to rounding errors.
 
 ## How to use
 1. Enter the amount you want to transfer to another credit card.
