@@ -1,6 +1,6 @@
 # Balance transfers
 
-https://moneylitics.github.io/balance-transfer/
+https://gudemorning.github.io/balance-transfer/
 
 Calculate how much you can transfer without increasing your fee, thanks to rounding errors.
 
